@@ -1,0 +1,77 @@
+.leftContainer{
+	width: 15%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #233646;
+}
+.rightContainer{
+	width: 85%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: white;
+}
+.optionsContainer{
+	width: 100%;
+	position: absolute;
+	top: 35%;
+	height: auto;
+}
+.optionsContainer ul{
+	list-style: none;
+	margin: 0 10%;
+	padding: 0;
+}
+.optionsContainer li{
+	width: 100%;
+	display: block;
+	margin: 10px 0;
+	padding: 15px;
+	text-align: center;
+}
+.optionsContainer li a{
+	color: white;
+}
+.orderList{
+	width: 25%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	font-size: 12px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+.singleOrder{
+	width: 100%;
+	height: auto;
+	border: 1px solid #E0E0E0;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 10px 10px; 
+	padding: 10px;
+}
+.detailOrder{
+	width: 75%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: white;
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	padding: 40px;
+}
+.orderTitle{
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.promoContainer{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 13px;
+}

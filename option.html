@@ -1,0 +1,36 @@
+<div class="orderTitle">
+	<h3>Price and Availability</h3>
+{{biriyani}}
+</div>
+
+<div class="promoContainer">
+	<p>Promo Codes</p>
+	<table class="table table-striped">
+  	<thead>
+  		<th>Limit</th>
+  		<th>Promo Code</th>
+  		<th>Discount</th>
+  	</thead>
+  	<tr ng-repeat="codelist in codes">
+  		<td>{{codelist.limit}}</td>
+  		<td>{{codelist.promocode}}</td>
+  		<td>{{codelist.discount}}</td>
+  	</tr>
+	</table>
+
+	<p>Biriyani and Rice</p>
+	<table class="table table-striped">
+  	<thead>
+  		<th>S.No.</th>
+  		<th>Name</th>
+  		<th>Price</th>
+      <th>Availability</th>
+  	</thead>
+  	<tr ng-repeat="codelist in biriyani">
+  		<td>{{$index+1}}</td>
+  		<td>{{codelist.name}}</td>
+  		<td>{{codelist.prize}}</td>
+      <td><input type="checkbox" value="checked"></td>
+  	</tr>
+	</table>
+</div>

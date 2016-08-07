@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="library/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="library/angular.min.js"></script>
+	<script type="text/javascript" src="library/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+	<title></title>
+</head>
+<body>
+	<div class="leftContainer">
+		<div class="optionsContainer">
+			<ul>
+				<li><a href="#/order">&#9728;Orders</a></li>
+				<li><a href="#/dashboard">Dashboard</a></li>
+				<li><a href="#/option">Options</a></li>
+			</ul>
+		</div>	
+	</div>
+
+	<div class="rightContainer">
+		<ng-view></ng-view>
+	</div>
+</body>
+<script type="text/javascript">
+$.ajax({
+	type:'GET',
+	url:"http://ec2-52-33-198-30.us-west-2.compute.amazonaws.com:3401/checkPromo",
+ 	success:function(data){
+ 		console.log('success', data);
+	}
+});
+</script>
+</html>

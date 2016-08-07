@@ -1,0 +1,34 @@
+<div class="orderList">
+	<div class="singleOrder" id="{{list.orderno}}" ng-repeat="list in orders" ng-click="getOrderId(list.orderno)">
+		<p>Order ID : {{list.orderno}}</p>
+		<p>Name : {{list.name}}</p>
+		<p>Address : {{list.address}}</p>
+
+	</div>
+</div>
+
+<div class="detailOrder">
+	<!-- {{messages.orders}} -->
+	<p>Order ID : {{messages.orderno}}</p>
+	<p>Name : {{messages.name}}</p>
+	<p>Address : {{messages.address}}</p>
+	<p>Phone No. : {{messages.phone}}</p>
+
+	<table class="table table-striped">
+  	<thead>
+  		<th>S.no</th>
+  		<th>Name</th>
+  		<th>Price</th>
+  		<th>Quantity</th>
+  		<th>Amount</th>
+  	</thead>
+  	<tr ng-repeat="lists in messages.orders">
+  		<td>{{$index+1}}</td>
+  		<td>{{lists.name}}</td>
+  		<td>{{lists.price}}</td>
+  		<td>{{lists.Quantity}}</td>
+  		<td>{{lists.price*lists.Quantity}}</td>
+  	</tr>
+	</table>
+	Total : 
+</div>
